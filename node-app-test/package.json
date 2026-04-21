@@ -2,10 +2,15 @@
   "name": "node-app-test",
   "version": "1.0.0",
   "description": "노드 애플리케이션 폴더 실습",
+  "license": "ISC",
+  "author": "방대혁",
+  "type": "module",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "방대혁",
-  "license": "ISC"
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
 }
