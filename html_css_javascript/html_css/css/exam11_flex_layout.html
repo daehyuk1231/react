@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper {
+            height: 1280px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: antiquewhite;
+            height: 150px;
+        }
+
+        section {
+            background-color: chartreuse;
+            flex-grow: 1;
+            display: flex;
+        }
+
+        nav {
+            flex-grow: 3;
+            background-color: coral;
+        }
+
+        article {
+            flex-grow: 7;
+        }
+
+        footer {
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            header
+        </header>
+
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">London</a></li>
+                    <li><a href="#">Paris</a></li>
+                    <li><a href="#">Seoul</a></li>
+                </ul>
+            </nav>
+            <article>
+                article
+            </article>
+        </section>
+
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+</body>
+</html>
