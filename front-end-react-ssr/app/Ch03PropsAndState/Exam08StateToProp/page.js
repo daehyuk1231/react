@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import ChildComponent from "./ChildComponent";
 
 function Exam08StateToProp() {
   // 상태 정의
@@ -20,7 +21,11 @@ function Exam08StateToProp() {
     <div className="card mt-2">
       <div className="card-header">Exam08StateToProp</div>
       <div className="card-body">
-        <Image src={`/images/${imgFile}`} alt="" width="150" height=""/>
+        <Image src={`/images/${imgFile}`} alt="" width="150" height="100"/>
+
+        <hr />
+
+        <ChildComponent imgFile={imgFile} changeImg={changeImg} />
       </div>
     </div>
   );
